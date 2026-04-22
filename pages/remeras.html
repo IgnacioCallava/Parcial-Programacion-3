@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remeras</title>
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <!-- remeras, buzos, pantalones y zapatillas usan catalogo.css -->
+</head>
+<body>
+    <header>
+
+    </header>
+
+
+        <main class="contenido-principal">
+        <section class="controles-superiores"> 
+        <!-- Acá esta el buscador, se podria sacar si rama agrega buscador en header-->
+
+
+            <div class="busqueda">
+                <input type="text" id="input-busqueda" placeholder="Buscar modelo o marca...">
+                <button class="btn-buscar">Buscar</button>
+            </div>
+
+            <div class="ordenador">
+                <label>Ordenar por:</label>
+                <select class="ordenar-por">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="precio-bajo">Precio: Menor a Mayor</option>
+                    <option value="precio-alto">Precio: Mayor a Menor</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="layout-tienda">
+            <!-- El contenido principal, el aside agrupa los filtros que puse a la izquierda -->
+            <aside class="filtros">
+                <div class="filtro-grupo">
+                    <h4>Categorías</h4>
+                    <!-- Checkbox para que se puedan seleccionar todas a la vez -->
+                    <label><input type="checkbox" value="running"> Deportivo</label>
+                    <label><input type="checkbox" value="urban"> Urban</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Marcas</h4>
+                    <!-- Aca use radio para que solo puedas seleccionar una -->
+                    <label><input type="radio" name="marca" value="todas" checked> Todas</label>
+                    <label><input type="radio" name="marca" value="nike"> Nike</label>
+                    <label><input type="radio" name="marca" value="adidas"> Adidas</label>
+                    <label><input type="radio" name="marca" value="puma"> Puma</label>
+                </div>
+
+                <div class="filtro-grupo">
+                    <h4>Talle</h4>
+                    <div class="talles-grid">
+                        <button class="talle-item">XS</button>
+                        <button class="talle-item">S</button>
+                        <button class="talle-item">M</button>
+                        <button class="talle-item">L</button>
+                        <button class="talle-item">XL</button>
+                        <button class="talle-item">XXL</button>
+                        <button class="talle-item">XXXL</button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="grid-productos">
+                <!-- En esta seccion agregariamos las cards de ema -->
+                <p>Aca las cards...</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
