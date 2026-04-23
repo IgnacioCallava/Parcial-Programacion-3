@@ -1,0 +1,17 @@
+#perchero {
+    display: flex;
+    overflow-x: auto; /* scroll horizontal */
+    gap: 20px;
+    padding: 10px;
+}
+
+#perchero .item {
+    flex: 0 0 auto; 
+    text-align: center;
+    width: 200px;
+}
+
+#perchero img {
+    width: 100%;
+    border-radius: 8px;
+}

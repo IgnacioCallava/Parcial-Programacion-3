@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-sacale=1.0">
+        <title>Catálogo de Productos</title>
+        <link rel="stylesheet" href = "./css/index.css"/>
+        <script src="./js/script.js" defer></script>
+        <!-- <link rel="icon" href="./..."/> , agregar si es que se usa icono -->
+    </head>
+    <body>
+        <header>
+            <!-- rama-->
+            <h1>Catálogo de Productos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/buzos.html">Buzos</a></li>
+                    <li><a href="pages/pantalones.html">Pantalones</a></li>
+                    <li><a href="pages/remeras.html">Remeras</a></li>
+                    <li><a href="pages/zapatillas.html">Zapatillas</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Buscador-->
+            <section id="filtros">
+                <h2>Filtros de Búsqueda</h2>
+                <input type="text" id="busqueda" placeholder="Buscar productos...">
+            
+
+            
+            <!-- Lista de categorías -->
+                <select id="categoria">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="buzos">Buzos</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="remeras">Remeras</option>
+                    <option value="zapatillas">Zapatillas</option>
+                </select>
+            </section>
+
+            <!-- Contador de resultados, despues con Java cambia -->
+            <p id="contador">0 productos encontrados</p>
+
+            <!--- "perchero" que muestra los productos -->
+            <section id="perchero">
+                <h3>Productos Destacados</h3>
+                <div class="item" data-categoria="buzos">
+                    <img src="assets\img\buzo-adidas-deportivo.jpg" alt="Buzo azul deportivo Adidas">
+                    <h3>Buzo Azul deportivo Adidas</h3>
+                    <p>Precio: $</p>
+                    
+                </div>
+                <div class="item" data-categoria="pantalones">
+                    <img src="assets/img/pantalon-puma-urban.png" alt="Pantalón Gris deportivo Puma">
+                    <h3>Pantalón Gris deportivo Puma</h3>
+                    <p>Precio: $</p>
+                </div>
+                <div class="item" data-categoria="remeras">
+                    <img src="assets\img\remera-nike-urbano.png" alt="Remera Nike">
+                    <h3>Remera Nike</h3>
+                    <p>Precio: $</p>                    
+                </div>
+                <div class="item" data-categoria="zapatillas">
+                    <img src="assets/img/zapatilla1.png" alt="Zapatillas deportivas">
+                    <h3>Zapatillas Deportivas</h3>
+                </div>
+            <!-- más ítems -->
+</section>
+
+            
+        <footer>
+            <!-- rama--> 
+        </footer>
+    </body>
+</html>
