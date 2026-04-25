@@ -80,3 +80,4 @@ fetch('../pages/footer.html')
         const doc = parser.parseFromString(data, 'text/html');
         document.getElementById('footer').innerHTML = doc.body.innerHTML;
     }); //usado para concetar el footer, para todas las pages
+

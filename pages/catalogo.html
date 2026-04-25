@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buzos</title>
     <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <!-- remeras, buzos, pantalones y zapatillas usan catalogo.css -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div> <!-- Header-->
 
 
         <main class="contenido-principal">
@@ -28,14 +24,6 @@
                 <p id="contador-productos"></p>
             </div>
 
-            <div class="ordenador">
-                <label>Ordenar por:</label>
-                <select class="ordenar-por">
-                    <option value="relevancia">Relevancia</option>
-                    <option value="precio-bajo">Precio: Menor a Mayor</option>
-                    <option value="precio-alto">Precio: Mayor a Menor</option>
-                </select>
-            </div>
         </section>
 
         <div class="layout-tienda">
@@ -230,9 +218,7 @@
             </section>
         </div>
     </main>
-    <footer>
-
-    </footer>
-    <script src="../js/script.js"></script>
+    <div id="footer"></div> <!-- Footer-->
+    <script src="../js/script.js"></script> <!-- script que usamos para conectar el js -->
 </body>
 </html>
