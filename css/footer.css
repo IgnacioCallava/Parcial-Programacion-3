@@ -6,24 +6,16 @@
 }
 
 footer {
-    background: var(--negro);
+    background: #6d6d6d8e;
     border-top: 1px solid var(--borde);
     padding: 48px 0;       
     width: 100%;
 }
 
-.footer-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 32px;
-}
-
 .footer-inner p {
+    color:#111111;
     font-size: 12px;
     font-weight: 700;
-    color: var(--gris);
+    text-align: center;
     letter-spacing: 2px;
 }

@@ -16,7 +16,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: #ffffff;
+    background: #6d6d6d8e;
     border-bottom: 1px solid var(--borde);
     width: 100%;
 }
@@ -31,6 +31,16 @@ header {
     height: 64px;
     position: relative;
 }
+
+.logo-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+    
+    
+
 
 .logo {
     display: flex;
@@ -51,11 +61,10 @@ nav {
     gap: 32px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
 }
 
 nav a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -64,42 +73,4 @@ nav a {
     padding-bottom: 4px;
     position: relative;
     transition: color 0.2s;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--negro);
-    transition: width 0.25s ease;
-}
-
-nav a:hover::after  { width: 100%; }
-nav a.active::after { width: 100%; background: var(--acento); }
-
-.search-wrapper {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.search-wrapper input {
-    font-size: 14px;
-    color: var(--negro);
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--borde);
-    padding: 4px 8px;
-    width: 160px;
-    outline: none;
-    transition: border-color 0.2s, width 0.3s;
-}
-
-.search-wrapper input::placeholder { color: var(--gris); }
-.search-wrapper input:focus {
-    border-color: var(--negro);
-    width: 220px;
 }
