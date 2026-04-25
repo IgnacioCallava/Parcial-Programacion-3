@@ -2,6 +2,7 @@ const buscador = document.getElementById("input-busqueda"); // Guardar el input.
 const productos = document.querySelectorAll(".card"); // Se guardan las card.
 const radiosMarca = document.querySelectorAll('input[name="marca"]'); // Selecciona los radio para filtrar las marcas.
 const checkCategorias = document.querySelectorAll('.filtro-grupo input[type="checkbox"]');
+const contador = document.getElementById("contador-productos");
 
 function filtrar() {
     const texto = buscador.value.toLowerCase().trim(); // Pasamos lo ingresado en el input a minúscula y sin espacios.
@@ -21,6 +22,8 @@ function filtrar() {
             marcaSeleccionada = radio.value;
         }
     });
+
+    let cantidad = 0;
 
     productos.forEach(producto => {
         // pasamos el texto de las card a minuscula.
@@ -46,10 +49,12 @@ function filtrar() {
 
         if (coincideTexto && coincideMarca && coincideCategoria) {
             producto.style.display = ""; // deja el CSS como está
+            cantidad++;
         } else {
             producto.style.display = "none"; // Si no cumple lo oculta
         }
     });
+    contador.textContent = "Productos encontrados: " + cantidad;
 }
 
 buscador.addEventListener("input", filtrar);
