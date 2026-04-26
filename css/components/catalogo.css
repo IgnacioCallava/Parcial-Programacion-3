@@ -66,8 +66,8 @@
 
 .card {
     display: flex;
-    flex-direction: column; /* Alinea los hijos uno debajo del otro */
-    justify-content: space-between; /* Empuja el contenido para que el botón siempre esté al fondo */
+    flex-direction: column; 
+    
     
     max-width: 250px;
     width: 100%;
@@ -83,6 +83,7 @@
     transform: scale(1.05); /* Agranda la card un 5% */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Crea una sombra oscura y suave abajo */
     border-color: transparent; /* Opcional: quita el borde si te molesta al resaltar */
+    cursor: pointer;
 }
 
 
@@ -94,4 +95,12 @@
     object-fit: cover;
     object-position: center;
     border-radius: 4px; 
+}
+.card-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 12px;
+    gap: 8px;
 }
