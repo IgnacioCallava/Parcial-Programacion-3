@@ -75,9 +75,5 @@ fetch('../pages/header.html')
 
 fetch('../pages/footer.html')
     .then(res => res.text())
-    .then(data => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(data, 'text/html');
-        document.getElementById('footer').innerHTML = doc.body.innerHTML;
-    }); //usado para concetar el footer, para todas las pages
+    .then(html => document.getElementById('footer').innerHTML = html); //usado para concetar el footer, para todas las pages
 
