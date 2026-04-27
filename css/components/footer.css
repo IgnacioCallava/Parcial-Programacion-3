@@ -1,0 +1,21 @@
+:root {
+    --negro:  #111111;
+    --blanco: #ffffff;
+    --gris:   #888888;
+    --borde:  #222222;
+}
+
+footer {
+    background: #6d6d6d8e;
+    border-top: 1px solid var(--borde);
+    padding: 48px 0;       
+    width: 100%;
+}
+
+.footer-inner p {
+    color:#111111;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
