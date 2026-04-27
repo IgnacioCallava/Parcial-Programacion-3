@@ -13,8 +13,6 @@
 }
 
 header {
-    position: sticky;
-    top: 0;
     z-index: 100;
     background: #6d6d6d8e;
     border-bottom: 1px solid var(--borde);
@@ -38,9 +36,6 @@ header {
     font-weight: 700;
     letter-spacing: 2px;
 }
-    
-    
-
 
 .logo {
     display: flex;
