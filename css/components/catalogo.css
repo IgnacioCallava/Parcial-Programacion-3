@@ -20,12 +20,12 @@
     padding: 8px 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 250px;
+    width: 240px;
 }
 
 .layout-tienda {
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 240px auto;
     gap: 32px;
 }
 
@@ -57,7 +57,7 @@
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 70px 50px;
+    gap: 72px 48px;
 
     justify-items: center;
     max-width: 1200px;
@@ -69,11 +69,11 @@
     flex-direction: column; 
     
     
-    max-width: 250px;
+    max-width: 240px;
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
+    padding: 16px;
     height: 100%; /* Importante para que todas midan lo mismo en la fila */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
@@ -90,7 +90,7 @@
 .card img {
     width: 100%;
     /* Definimos una altura fija para todas las imágenes */
-    height: 350px; 
+    height: 348px; 
     /* Recorta la imagen para que llene el espacio sin estirarse */
     object-fit: cover;
     object-position: center;

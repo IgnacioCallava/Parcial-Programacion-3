@@ -37,7 +37,7 @@
 .item img{
     width: 100%;
     /* Definimos una altura fija para todas las imágenes */
-    height: 350px; 
+    height: 348px; 
     /* Recorta la imagen para que llene el espacio sin estirarse */
     object-fit: cover;
     object-position: center;
